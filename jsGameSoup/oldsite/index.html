@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>jsGameSoup documentation: a game library for Javascript</title>
+	<link rel="stylesheet" type="text/css" href="docs.css" />
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9009723-9']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+</head>
+<body>
+<div id='logo-container'><img id='logo' src='jsGameSoup-logo.png'></div>
+<h2>jsGameSoup v212</h2>
+
+<p>A Free Software framework for making games for the web using Javascript and open web technologies. Modular components abstract away the complexity of developing Javascript games for multiple browsers. Currently runs under new versions of Firefox (Gecko), Safari/Chrome (WebKit), and Internet Explorer 6 and higher.</p>
+
+<p><span id='demos'>
+<a href="http://mccormick.cx/dev/blogref/FallingGame/"><img src="http://jsgamesoup.net/screenshots/FallingGame-thumbnail.png" alt="FallingGame demo" /></a>
+<a href="http://mccormick.cx/dev/blogref/AsteroidsTNG/"><img src="http://jsgamesoup.net/screenshots/AsteroidsTNG-thumbnail.png" alt="AsteroidsTNG demo" /></a>
+<a href="http://jsgamesoup.net/demos/box2d"><img src="http://jsgamesoup.net/screenshots/SoupBox-thumbnail.png" alt="SoupBox - box2d.js physics demo" /></a>
+<a href="http://jsgamesoup.net/demos/audio.html"><img src="http://jsgamesoup.net/screenshots/AudioDemo-thumbnail.png" alt="Audio demo" /></a>
+<a href="http://jsgamesoup.net/demos/vector-math-sylvester"><img src="http://jsgamesoup.net/screenshots/Sylvester-thumbnail.png" alt="Sylvester.js vector math demo" /></a>
+</span></p>
+
+<p><a href="http://jsgamesoup.net/jsGameSoup-v212.zip">Download jsGameSoup v212</a> - jump down to the quickstart section to dive in.</p>
+
+<ul>
+<li><a href="http://mccormick.cx/news/tags/jsgamesoup">Blog</a></li>
+<li><a href="http://groups.google.com/group/jsgamesoup">Mailing list</a></li>
+</ul>
+
+<p>Copyright Chris McCormick, 2009-2011, and LGPL licensed. Please see the file <a href="http://jsgamesoup.net/COPYING">COPYING</a> for details.</p>
+
+<p><a href="mailto:chris@mccormickit.com">Using jsGameSoup for your game? Hire me as a consultant.</a></p>
+
+<h2>Batteries included</h2>
+
+<ul>
+<li>Cross browser event handling (keyboard, mouse, touch)</li>
+<li>Game entity management</li>
+<li>Sprite management <a href="http://jsgamesoup.net/jsdocs/symbols/Sprite.html">sprite.js</a></li>
+<li>Sound effects playback with <a href="http://jsgamesoup.net/jsdocs/symbols/AudioManager.html">audio.js</a></li>
+<li>Rudimentary polygon, AABB-box, circle collision detection <a href="http://jsgamesoup.net/jsdocs/symbols/collide.html">collisions.js</a></li>
+<li>Fast, deterministic random number generator <a href="http://jsgamesoup.net/jsdocs/symbols/SeedableRandom.html">random.js</a></li>
+<li>Simple AJAX and bulk data loading with <a href="http://jsgamesoup.net/jsdocs/symbols/network.html">network.js</a></li>
+<li>Basic cookie management <a href="http://jsgamesoup.net/jsdocs/symbols/cookies.html">cookies.js</a></li>
+<li>Simple finite state machine <a href="http://jsgamesoup.net/jsdocs/symbols/statemachine.html">statemachine.js</a></li>
+<li>AStar path finding on a 2d board of squares <a href="http://jsgamesoup.net/jsdocs/symbols/AStar.html">a_star.js</a></li>
+<li>Optional auto-init to launch code attached to HTML canvases</li>
+</ul>
+
+<p><img src="http://jsgamesoup.net/screenshots/FallingGame.png" alt="FallingGame screenshot" title="" /></p>
+
+<h2>Documentation</h2>
+
+<ul>
+<li><a href="http://jsgamesoup.net/jsdocs">All jsGameSoup API documentation</a></li>
+<li><a href="http://jsgamesoup.net/jsdocs/symbols/JSGameSoup.html">JSGameSoup engine class</a></li>
+<li><a href="http://jsgamesoup.net/jsdocs/symbols/ExampleEntity.html">Reference implementation of a jsGameSoup entity</a></li>
+<li><p><a href="http://jsgamesoup.net/jsdocs/symbols/src/example-game.js.html">Simple jsGameSoup example game</a></p></li>
+<li><p><a href="http://www.nihilogic.dk/labs/canvas_sheet/HTML5_Canvas_Cheat_Sheet.png">Canvas cheatsheet</a></p></li>
+<li><p><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas-element">Canvas tag documentation</a></p></li>
+<li><p><a href="http://jsgamesoup.net/tests">Some tests</a></p></li>
+</ul>
+
+<h2>Download</h2>
+
+<p><a href="http://jsgamesoup.net/jsGameSoup-v212.zip">Zipfile of jsGameSoup v212</a></p>
+
+<p>You probably also want one of the following for Internet Explorer compatibility:</p>
+
+<ul>
+<li><a href="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js">excanvas.js</a> from the <a href="http://code.google.com/p/explorercanvas/">excanvas homepage</a> for pure Javascript compatibility, but it's a bit slower.</li>
+<li><a href="http://flashcanvas.net/download">FlashCanvas</a> which provides better performance but depends upon the proprietary Flash plugin.</li>
+</ul>
+
+<p>See the Internet Explorer compatability section below for instructions on getting your jsGameSoup game to work in Internet Explorer 6 and higher.</p>
+
+<p><img src="http://jsgamesoup.net/screenshots/AsteroidsTNG.png" alt="AsteroidsTNG screenshot" title="" /></p>
+
+<h2>Suggested companion libraries</h2>
+
+<p>In an effort to keep this library minimal and focused on making games, here are some excellent 3rd party libraries and frameworks providing functionality you might need that is not included in jsGameSoup. Wherever possible these are single-file Javascript libraries that can just be dropped into your project along side jsGameSoup.</p>
+
+<ul>
+<li>Vector and matrix math - <a href="http://sylvester.jcoglan.com/">sylvester.js</a> (see the demo below)</li>
+<li>Server side and/or multiplayer code <a href="http://socket.io/">Node.js + socket.io</a></li>
+<li>2D physics - <a href="http://box2d-js.sourceforge.net/">box2d.js</a> (see the demo below)</li>
+<li>Basic Ajax/network calls - <a href="http://code.google.com/p/xmlhttprequest/">XMLHttpRequest.js</a></li>
+<li>Cookie management - <a href="http://code.google.com/p/cookie-js/source/browse/trunk/cookie.js">cookies-js</a> or <a href="http://www.quirksmode.org/js/cookies.html">roll your own</a></li>
+</ul>
+
+<h2>Free game resources</h2>
+
+<ul>
+<li><a href="http://www.drpetter.se/project_sfxr.html">SFXR sound effects tool</a> - also <a href="http://www.bfxr.net/">BFXR in your browser</a></li>
+<li><a href="http://lunar.lostgarden.com/labels/free%20game%20graphics.html">Dan Cook's free game graphics</a></li>
+<li><a href="http://forums.tigsource.com/index.php?topic=8970.0">Oryx's LOFI fantasy tiles and sprites</a></li>
+<li><a href="http://www.widgetworx.com/widgetworx/portfolio/spritelib.html">WidgetWorx SpriteLib</a></li>
+<li><a href="http://blogoscoped.com/archive/2006-08-08-n51.html">Philipp Lenssen's free sprites</a></li>
+<li><a href="http://hasgraphics.com/">HasGraphics game graphics</a></li>
+<li><a href="http://www.reinerstilesets.de/2d-grafiken/2d-environment/">Reiner`s Tilesets</a></li>
+</ul>
+
+<h2>Source code</h2>
+
+<p>Contribute or get the latest version of the code using <a href="http://bazaar-vcs.org/">bazaar</a>:</p>
+
+<pre><code>bzr co http://mccormick.cx/dev/jsgamesoup/
+</code></pre>
+
+<p>Or check the <a href="http://code.google.com/p/jsgamesoup/">Google Code page</a> for the SVN repository.</p>
+
+<p>Or check the <a href="https://github.com/chr15m/jsGameSoup">Github page</a> for the git repository.</p>
+
+<p><a href="mailto:chris@mccormick.cx">Patches welcome</a>!</p>
+
+<p><img src="http://jsgamesoup.net/screenshots/Numbeat.png" alt="Numbeat screenshot" title="" /></p>
+
+<h2>Quick Start</h2>
+
+<p>Start in an empty working directory. First get the jsGameSoup source in a sub-directory called 'jsGameSoup'.</p>
+
+<p>Now create a file called index.html that will contain a basic HTML page, with a window-filling div tag that will become our game canvas.</p>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;script src="jsGameSoup/js/jsgamesoup.js"&gt;&lt;/script&gt;
+    &lt;script src="main.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+    div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+    }
+&lt;/style&gt;
+&lt;body onload='startGame()'&gt;
+    &lt;div id='surface'&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Now edit main.js with a little test code to get you started:</p>
+
+<pre><code>function Dot(gs) {
+    var x = gs.width * 0.5;
+    var y = gs.height * 0.5;
+    var r = gs.width * 0.1;
+
+    this.update = function() {
+        x += gs.width * 0.01 * (Math.random() - 0.5);
+        y += gs.height * 0.01 * (Math.random() - 0.5);
+    }
+
+    this.draw = function(c) {
+        c.fillRect(x - r / 2, y - r / 2, r, r);
+    }
+}
+
+function startGame() {
+    var surface = document.getElementById("surface");
+    var gs = new JSGameSoup(surface, 30);
+    gs.addEntity(new Dot(gs));
+    gs.launch();
+}
+</code></pre>
+
+<p>When you visit index page now you should see a black square wiggling about. The main component of the framework is the <code>JSGameSoup()</code> object, which is the engine of the system. You add your game entities to it with the <code>addEntity()</code> method as above. Entities should have an <code>update()</code> method and a <code>draw()</code> method, which accepts a canvas context as an argument. You can use the canvas context to draw your entities.</p>
+
+<h3>Internet Explorer compatibility</h3>
+
+<p>To make your jsGameSoup game run under Internet Explorer 6 and above, you can use the ExplorerCanvas library (pure Javascript) or the FlashCanvas library (uses the proprietary Flash plugin) to emulate the <code>&lt;canvas&gt;</code> tag. These libraries have both been tested with jsGameSoup on Internet Explorer 6 and work fine, with the FlashCanvas library providing better performance than excanvas. You should get the source code for the project you want and then put the respective line for loading the library inside the <code>&lt;head&gt;</code> tag, before any other <code>&lt;script&gt;</code> tags.</p>
+
+<p>To use ExplorerCanvas:</p>
+
+<pre><code>&lt;!--[if IE]&gt;&lt;script src="explorercanvas/excanvas.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+</code></pre>
+
+<p>To use FlashCanvas:</p>
+
+<pre><code>&lt;!--[if IE]&gt;&lt;script src="flashcanvas/bin/flashcanvas.js"&gt;&lt;/script&gt;&lt;![endif]--&gt;
+</code></pre>
+
+<p>See the Download section above for links to these libraries.</p>
+
+<p>One final gotcha under IE6 is that Javascript datastructures should not contain a trailing comma on the last element. E.g. <code>t = [1, 2, 3];</code> not <code>t = [1, 2, 3,];</code> This is a quirk of the browser that seems to trip people up. If you are finding debugging under old versions of Internet Explorer frustrating, one thing you can do to help is <a href="http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=22185">install the Microsoft Script Debugger</a>. You'll also want to enable debugging in the advanced options of the browser.</p>
+
+<h3>Auto-launching your games</h3>
+
+<p>Auto-launching is useful if you have pages with multiple game canvases and you don't want to write the launch code for every instance. You do this by simply creating <code>&lt;canvas&gt;</code> tags in your html document with an attribute "jsgs":</p>
+
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src='jsGameSoup/jsgamesoup.js'&gt;&lt;/script&gt;
+        &lt;script&gt;
+            function startGame(gs) {
+                // our demo game entity
+                function Thingy() {
+                    this.draw = function(c, gs) {
+                        c.moveTo(10, 10);
+                        c.lineTo(10 + 10 * Math.sin(), 10 + 10 * Math.cos());
+                    }
+                }
+                gs.addEntity(new Thingy());
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;canvas id='mygame' jsgs='startGame' fps="25"&gt;&lt;/canvas&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>When the page is loaded, jsGameSoup will attach a <code>new JSGameSoup()</code> object to every canvas tag with the 'jsgs' attribute. This specifies the name of the function which should be called to launch the game script associated with that canvas. The 'fps' attribute specifies the desired frame rate of the game engine for that canvas. Once the jsGameSoup engine has been attached to the canvas it starts running immediately.</p>
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.mccormick.cx/" : "http://stats.mccormick.cx/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://stats.mccormick.cx/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+</body>
+</html>

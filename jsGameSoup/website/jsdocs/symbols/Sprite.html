@@ -1,0 +1,862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+		<title>JsDoc Reference - Sprite</title>
+
+		<style type="text/css">
+			hr
+{
+	border: none 0;
+	border-top: 1px solid black;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 0px;
+	float: left;
+	width: 18%;
+	position: absolute;
+	left: 8px;
+	padding: 8px;
+}
+
+.classList
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+}
+
+h2 { font-size: 110%; }
+
+caption, div.sectionTitle
+{
+	background-color: silver;
+	color: black;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+	border: 1px silver solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px silver solid;
+	border-right: 1px silver solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px silver solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	color: silver;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #f60;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+
+			body {
+	margin: 0px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 30px;
+	background: #1a1a1a;
+	color: white;
+	font-family: Arial;
+	background-image: url("pattern.gif");
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid white;
+}
+
+p {
+	margin-left: 2%;
+}
+
+pre {
+	margin-left: 4%;
+}
+
+a {
+	color: #f60;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#logo {
+	margin: 0px;
+	border: 0px solid black;
+	*visibility: hidden;
+}
+
+#logo-container {
+	width: 209px;
+	height: 144px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="jsGameSoup-logo.png", sizingMethod='scale');
+}
+
+div#tweet {
+	text-align: right;
+	margin-top: 30px;
+	margin-bottom: -30px;
+}
+
+span#demos {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+span#demos a:hover img {
+	border: 1px solid #f60;
+}
+
+span#demos a img {
+	display: inline;
+}
+
+div#menu {
+	float: right;	
+	position: relative;
+	top: -150px;
+}
+
+div#menu a {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+div#version {
+	float: right;
+}
+
+div#download {
+	float: right;
+	font-size: 1.5em;
+	margin-top: -160px;
+	text-align: right;
+}
+
+div#download img {
+	border: 0px;
+}
+
+a#download-link {
+	text-decoration: none;
+}
+
+a#download-link:hover {
+}
+
+			
+			body {
+				background-image: url("../../pattern.gif");
+			}
+			
+			#logo-container {
+				width: 209px;
+				height: 144px;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../../jsGameSoup-logo.png", sizingMethod='scale');
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id='logo-container'><a href='/'><img id='logo' src='../../jsGameSoup-logo.png'></a></div>
+
+
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">
+</div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a>
+| <a href="../files.html">File Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><a href="../symbols/AStar.html">AStar</a></li>
+	
+	<li><a href="../symbols/AudioManager.html">AudioManager</a></li>
+	
+	<li><a href="../symbols/collide.html">collide</a></li>
+	
+	<li><a href="../symbols/cookies.html">cookies</a></li>
+	
+	<li><a href="../symbols/ExampleEntity.html">ExampleEntity</a></li>
+	
+	<li><a href="../symbols/ExampleGame.html">ExampleGame</a></li>
+	
+	<li><a href="../symbols/JSGameSoup.html">JSGameSoup</a></li>
+	
+	<li><a href="../symbols/network.html">network</a></li>
+	
+	<li><a href="../symbols/noise.PerlinNoise.html">noise.PerlinNoise</a></li>
+	
+	<li><a href="../symbols/noise.SimplexNoise.html">noise.SimplexNoise</a></li>
+	
+	<li><a href="../symbols/Number.html">Number</a></li>
+	
+	<li><a href="../symbols/SeedableRandom.html">SeedableRandom</a></li>
+	
+	<li><a href="../symbols/Sprite.html">Sprite</a></li>
+	
+	<li><a href="../symbols/statemachine.html">statemachine</a></li>
+	
+	<li><a href="../symbols/URL.html">URL</a></li>
+	
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class Sprite
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				A sprite class with different image/animation sequences based upon defined 'actions'.
+				
+				
+					<br /><i>Defined in: </i> <a href="../symbols/src/sprite.js.html">sprite.js</a>.
+				
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class Sprite.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/Sprite.html#constructor">Sprite</a></b>(anchor, frames, loadedcallback)
+							</div>
+							<div class="description">Allows you to associate a set of animations with a particular entity.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class Sprite.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#aabb">aabb</a></b>(pos)
+								</div>
+								<div class="description">Returns the axis aligned bounding box of this sprite at its current frame.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#action">action</a></b>(a, reset, callback)
+								</div>
+								<div class="description">Sets which named animation/action to play.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#draw">draw</a></b>(c, pos)
+								</div>
+								<div class="description">Draw the sprite.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#get_action">get_action</a></b>()
+								</div>
+								<div class="description">Returns the current action being played.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#get_frame">get_frame</a></b>()
+								</div>
+								<div class="description">Returns the current frame number being played.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#get_num_frames">get_num_frames</a></b>()
+								</div>
+								<div class="description">Returns the total number of frames.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">Sprite.<b><a href="../symbols/Sprite.html#.preload">preload</a></b>(images, completedcallback, progresscallback)
+								</div>
+								<div class="description">Pre-loads a whole array of images.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#set_frame">set_frame</a></b>(newframe)
+								</div>
+								<div class="description">Sets the animation frame to play *</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/Sprite.html#update">update</a></b>()
+								</div>
+								<div class="description">Call this method from inside the owner entity's update() method.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>Sprite</b>(anchor, frames, loadedcallback)
+				</div>
+				
+				<div class="description">
+					Allows you to associate a set of animations with a particular entity. To do vector graphics, use the canvas tag methods instead.
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>anchor</b>
+								
+							</dt>
+								<dd>selects which side of the sprite's rectangle to 'anchor' the animation to. e.g. ["center", "bottom"] will anchor the sprite to the ground (side view) whilst ["right", "center"] would anchor it to the right hand side.</dd>
+						
+							<dt>
+								 <b>frames</b>
+								
+							</dt>
+								<dd>is a dictionary containing all actions and their associated set of images and the number of frames to show each image for. For instance: {"stand": [["img/stand.png", 0],], "walk": [["img/walk1.png", 3], ["img/walk2.png", 3],]} where each walk frame is shown for three frames.</dd>
+						
+							<dt>
+								 <b>loadedcallback</b>
+								
+							</dt>
+								<dd>is a function that is called once all of the frames in all action animations are successfully loaded.</dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="aabb"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>aabb</b>(pos)
+					
+					</div>
+					<div class="description">
+						Returns the axis aligned bounding box of this sprite at its current frame.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>pos</b>
+									
+								</dt>
+								<dd>is the position to get the aabb relative to (factors the anchor point in too).</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="action"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>action</b>(a, reset, callback)
+					
+					</div>
+					<div class="description">
+						Sets which named animation/action to play.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>a</b>
+									
+								</dt>
+								<dd>is the name of the animation/action you defined on initialisation.</dd>
+							
+								<dt>
+									<b>reset</b>
+									
+								</dt>
+								<dd>indicates whether the frame number should be reset to the start of the animation.</dd>
+							
+								<dt>
+									<b>callback</b>
+									
+								</dt>
+								<dd>is called when the animation has completed one loop - receives parameter "action".</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="draw"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>draw</b>(c, pos)
+					
+					</div>
+					<div class="description">
+						Draw the sprite. Call this method from inside the owner entity's draw() method.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>c</b>
+									
+								</dt>
+								<dd>is the canvas to draw on (passed to the entity's draw(c) method)</dd>
+							
+								<dt>
+									<b>pos</b>
+									
+								</dt>
+								<dd>is the position to draw at relative to the anchor point.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="get_action"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>get_action</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current action being played. *
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="get_frame"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>get_frame</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current frame number being played. *
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="get_num_frames"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>get_num_frames</b>()
+					
+					</div>
+					<div class="description">
+						Returns the total number of frames. *
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".preload"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">Sprite.</span><b>preload</b>(images, completedcallback, progresscallback)
+					
+					</div>
+					<div class="description">
+						Pre-loads a whole array of images. Provides feedback on which images are loaded via the progresscallback, which returns the number of images left to load each time one is loaded, and 0 when the final image is loaded.
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>images</b>
+									
+								</dt>
+								<dd>is an array of strings containing the URLs of images to load.</dd>
+							
+								<dt>
+									<b>completedcallback</b>
+									
+								</dt>
+								<dd>is a function which is called when all images are loaded</dd>
+							
+								<dt>
+									<b>progresscallback</b>
+									
+								</dt>
+								<dd>is a function accepting an integer, which is the count of images left to load</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="set_frame"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>set_frame</b>(newframe)
+					
+					</div>
+					<div class="description">
+						Sets the animation frame to play *
+						
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>newframe</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="update"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>update</b>()
+					
+					</div>
+					<div class="description">
+						Call this method from inside the owner entity's update() method.
+						
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Thu Mar 22 2012 10:59:51 GMT+0800 (WST)
+		</div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.mccormick.cx/" : "http://stats.mccormick.cx/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://stats.mccormick.cx/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<!--<script src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>-->
+		<script src="jsGameSoup/js/jsgamesoup.js"></script>
+		<script src="sylvester.js"></script>
+		<script src="myconsole.js"></script>
+		<script src="obstacles.js"></script>
+		<script src="legend.js"></script>
+		<script src="buttons.js"></script>
+		<script src="robot.js"></script>
+		<script src="goals.js"></script>
+		<script src="runpath.js"></script>
+		<script src="path.js"></script>
+		<script src="node.js"></script>
+		<script src="main.js"></script>
+		<style>
+			#canvas {
+			    border: 1px solid black;
+			    background-repeat: no-repeat;			   
+				background-attachment: fixed;
+			}
+			#legend {
+				background-repeat:no-repeat;
+				background-attachment:fixed
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1" width="100%" height="100%" cellpadding="10" >
+			<colgroup>
+				<col width="10%" />
+				<col width="90%" />
+			</colgroup>
+			<tr height="80%">
+				<td colspan="2">
+					<div align="center">
+						<canvas id='canvas' jsgs='startGame' fps="25" style="border:solid 1px #000000" width="1000" height="500">
+							Your browser does not support the canvas element.
+						</canvas>
+					</center>
+				</td>
+			</tr>
+			<tr height="10%">
+				<td colspan="2">
+					<b><p>Console:</p></b>
+						<div id="output">
+							XXX
+						</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

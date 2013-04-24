@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="blocks1" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="blocks1.png" trans="000000" width="640" height="376"/>
+ </tileset>
+ <tileset firstgid="199" name="blocks2" tilewidth="32" tileheight="32" spacing="2" margin="2">
+  <image source="blocks2.png" trans="000000" width="640" height="377"/>
+ </tileset>
+ <layer name="parallax" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3YWU7DMBAA0PSM8M3OAYCWK7DeC7gVRiJSZaVL6knjJu9JI3VxUtsjT+w2DafiNsVdivuxOwIwoosUlymuRu4HME/XKW7G7gTAkZwtmuZ8MXYvxvNVGN8pfiq6z76/U6uH/3hM8ZS9Xna8X6V4PkK79vOXFK8p3lK8p/hI8Vl4bc22zdFy7ftlFtHzvOsekbmsWT7n+465JCdR8zqlPLT6zE3XemnbyUeMqDpTOs9d18+lRq2LGGv7fC2pdUOvpVMRMdau/Ay5P9pWq049T1HjaqPPNYf+TkRfaxVZE7rWSi1njlrXQy76uVm6B9r23dRqU5fos1b+vu/66rO/neIzZMhc5DVm1/5sV7up5+JPfqbbNNbo58whtWyK858b+hwWta+ay/kwcs+zqU3U/x1TzcG6kvHt2y7y/DH1fBzDHOoMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADOkX7tPgB0CcAAA=
+  </data>
+ </layer>
+ <layer name="behind" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3Uuw2AIAAFQNzC/ccQP9PYOYCl2pkIKlpp7pLXEBI+LxACAAAAAADAf7VrmgfpC+d3ibXrKr2nec34/mif9LSPOxnCeR8cbX3s7y11p6m3EDPzYyb6uGfro/TvOcuUGdcHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwLUFFPbqnECcAAA=
+  </data>
+ </layer>
+ <layer name="main" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3VSUorURiG4biQuwrR4TVgCzpypu5AHdjOcq89dhuwWYC9a/QLlFgWSSZqrOjzwEvVOaEwdX7URoNBNT/03d8A4Gv5O/cxIzm/UWdYC8uZw3Sa6TKPYXPqu4Wc+WJqpaWiVunaMpO+Wsl5rzrz2viXWfw3j9rw+1Ev5lEv5lEv/n/Uw3iaSJNpKk1X1t0+6/VMp/Wffr3QgJtNf9NYapbuq3ud9ptdnq0+017PffmbwM+wk3bTXtpPB8W1uneYjr7lG/4+x+kknaazdF60VvS6pn/a576eNtJm421Gr9ff7Cbdprt0nx46rB/TU7Hu9Vl53e65x89db7yfyVba/tQ3G1yX6ap0va7cd9or318U6+oeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlL0AsEhCHUCcAAA=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="100" height="100" visible="0">
+  <object x="479" y="448" width="128" height="62"/>
+ </objectgroup>
+ <layer name="front" width="100" height="100">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3VvQrCMBgF0Badu+n7gz/P5Kzi4CjiIA5mCbQZSisNLeYcCDSQ4dJLvlQVJdjNHYCO/dwB6NDHsuhjWQ5zByjAacTZY7YUxB7uyb6PeZVP7OGT7PuYV/nEHpq6u+/jfuQTe4hzasi8at+Pc1iXsK6TpipX+m6MnVfPsB5hvaYMVbD03Rg7r1bhfq3raTOVLH03mgH/tt3HJpzf6gP4A7fW93u2FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/OILe6a7GUCcAAA=
+  </data>
+ </layer>
+</map>
